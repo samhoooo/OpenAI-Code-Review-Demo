@@ -1,14 +1,15 @@
 import './App.css';
-import Component from './Component';
 
-function App() {
+function Component(props) {
   return (
     <div className="App">
       <header className="App-header">
-        <Component name="Component 1" />
+        <p>
+          I am {props.name} waiting to be reviewed.
+        </p>
       </header>
     </div>
   );
 }
 
-export default App;
+export default Component;
